@@ -129,6 +129,9 @@ public class PrincipalFragment extends Fragment {
                     googleMap.addMarker(
                             new MarkerOptions().position(restaurante).title("Biblioteca")
                                     .snippet("Marcador enviado pela tela botao"));
+                    googleMap.moveCamera(
+                            CameraUpdateFactory.newLatLngZoom(restaurante,17));
+
                 }
                 else{
 
