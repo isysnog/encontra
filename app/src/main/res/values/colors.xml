@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#264A65</color>
+    <color name="colorPrimaryDark">#1A3B4D</color>
+    <color name="colorAccent">#F7A305</color>
+    <color name="fundo_bt">#FFFFFF</color>
+    <color name="cor_letra_bt">#F7A305</color>
+    <color name="fundo_telas">#F0F3F8</color>
+</resources>

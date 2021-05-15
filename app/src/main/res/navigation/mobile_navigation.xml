@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_principal">
+
+    <fragment
+        android:id="@+id/nav_principal"
+        android:name="com.example.isys.encontraunir.ui.principal.PrincipalFragment"
+        android:label="@string/menu_principal"
+        tools:layout="@layout/fragment_principal" />
+
+    <fragment
+        android:id="@+id/nav_espacos"
+        android:name="com.example.isys.encontraunir.ui.espacos.EspacosFragment"
+        android:label="@string/menu_espacos"
+        tools:layout="@layout/fragment_espacos" />
+
+    <fragment
+        android:id="@+id/nav_cursos"
+        android:name="com.example.isys.encontraunir.ui.cursos.CursosFragment"
+        android:label="@string/menu_cursos"
+        tools:layout="@layout/fragment_cursos" />
+
+    <fragment
+        android:id="@+id/nav_pos_graduacao"
+        android:name="com.example.isys.encontraunir.ui.pos.PosFragment"
+        android:label="@string/menu_pos"
+        tools:layout="@layout/fragment_pos" />
+
+    <fragment
+        android:id="@+id/nav_pro_reitorias"
+        android:name="com.example.isys.encontraunir.ui.pro.ReitoriasFragment"
+        android:label="@string/menu_reitorias"
+        tools:layout="@layout/fragment_reitorias" />
+
+    <fragment
+        android:id="@+id/nav_sobre"
+        android:name="com.example.isys.encontraunir.ui.sobre.SobreFragment"
+        android:label="@string/menu_sobre"
+        tools:layout="@layout/fragment_sobre" />
+</navigation>

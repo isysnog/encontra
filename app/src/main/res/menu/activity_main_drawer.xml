@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_principal"
+            android:icon="@drawable/ic_navegacao"
+            android:title="@string/menu_principal"/>
+        <item
+            android:id="@+id/nav_espacos"
+            android:icon="@drawable/ic_espacos"
+            android:title="@string/menu_espacos"/>
+        <item
+            android:id="@+id/nav_cursos"
+            android:icon="@drawable/ic_graduacao"
+            android:title="@string/menu_cursos"/>
+        <item
+            android:id="@+id/nav_pos_graduacao"
+            android:icon="@drawable/ic_graduacao"
+            android:title="@string/menu_pos"/>
+        <item
+            android:id="@+id/nav_pro_reitorias"
+            android:icon="@drawable/ic_reitoria"
+            android:title="@string/menu_reitorias"/>
+    </group>
+
+    <item android:title="Informações">
+        <menu>
+            <item
+                android:id="@+id/nav_sobre"
+                android:icon="@drawable/ic_info"
+                android:title="@string/menu_sobre"/>
+        </menu>
+    </item>
+
+</menu>

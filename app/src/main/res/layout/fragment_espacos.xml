@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fundo_telas"
+        tools:context=".ui.espacos.EspacosFragment">
+
+        <Button
+            android:id="@+id/bt_biblioteca"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/biblioteca"
+            android:onClick="localBilioteca"
+            app:layout_constraintEnd_toStartOf="@+id/bt_dirca"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/bt_dirca"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/dirca"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bt_biblioteca"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/bt_dce"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/dce"
+            app:layout_constraintEnd_toStartOf="@+id/bt_copia"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt_biblioteca" />
+
+        <Button
+            android:id="@+id/bt_copia"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/copiadora"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bt_dce"
+            app:layout_constraintTop_toBottomOf="@+id/bt_dirca" />
+
+        <Button
+            android:id="@+id/bt_paradas"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/parada"
+            app:layout_constraintEnd_toStartOf="@+id/bt_agua"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt_cantina" />
+
+        <Button
+            android:id="@+id/bt_estac"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/estacionamento"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bt_cantina"
+            app:layout_constraintTop_toBottomOf="@+id/bt_copia" />
+
+        <Button
+            android:id="@+id/bt_cantina"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/cantinas"
+            app:layout_constraintEnd_toStartOf="@+id/bt_estac"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt_dce" />
+
+        <Button
+            android:id="@+id/bt_agua"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/bebedouro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bt_paradas"
+            app:layout_constraintTop_toBottomOf="@+id/bt_estac" />
+
+        <Button
+            android:id="@+id/bt_bho"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/sanitarios"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/bt_tatuzao"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt_paradas" />
+
+        <Button
+            android:id="@+id/bt_tatuzao"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/tatuzao"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bt_bho"
+            app:layout_constraintTop_toBottomOf="@+id/bt_agua" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
