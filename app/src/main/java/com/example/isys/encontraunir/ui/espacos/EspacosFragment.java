@@ -16,6 +16,7 @@ import android.widget.Toast;
 import com.example.isys.encontraunir.MainActivity;
 import com.example.isys.encontraunir.R;
 import com.example.isys.encontraunir.ui.principal.PrincipalFragment;
+import com.google.android.gms.maps.MapView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -68,7 +69,7 @@ public class EspacosFragment extends Fragment implements Button.OnClickListener 
                 args.putDouble("latitude", -8.834438573424283);
                 args.putDouble("longitude", -63.93909608023147);
                 principalFragment.setArguments(args);
-                fragmentTransaction.replace(R.id.mapView, principalFragment);
+                fragmentTransaction.replace(this.getId(), principalFragment);
                 fragmentTransaction.commit();
                 break;
             case R.id.bt_dirca:

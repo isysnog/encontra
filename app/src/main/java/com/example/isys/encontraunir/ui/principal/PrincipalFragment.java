@@ -36,6 +36,8 @@ public class PrincipalFragment extends Fragment {
 
     MapView mMapView;
     GoogleMap googleMap;
+    Bundle args;
+
     SearchView searchView;
     ListView listView;
 
@@ -108,24 +110,28 @@ public class PrincipalFragment extends Fragment {
             e.printStackTrace();
         }
 
-        double lati, longi;
-        Bundle args = getArguments();
-        if(args!=null){
-            lati = args.getDouble("latitude");
-            longi = args.getDouble("longitude");
-            LatLng restaurante = new LatLng(lati,longi);
-            googleMap.addMarker(
-                    new MarkerOptions().position(restaurante).title("Biblioteca")
-                            .snippet("Marcador enviado pela tela botao"));
-        }
-        else{
+        args = getArguments();
+
 
         mMapView.getMapAsync(new OnMapReadyCallback() {
             @Override
             public void onMapReady(GoogleMap mMap) {
+
                 googleMap = mMap;
 
                 googleMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
+                double lati, longi;
+
+                if(args!=null){
+                    lati = args.getDouble("latitude");
+                    longi = args.getDouble("longitude");
+                    LatLng restaurante = new LatLng(lati,longi);
+                    googleMap.addMarker(
+                            new MarkerOptions().position(restaurante).title("Biblioteca")
+                                    .snippet("Marcador enviado pela tela botao"));
+                }
+                else{
+
 
                 // Colocar marcadores no do mapa
                 //BLOCOS 1
@@ -406,9 +412,10 @@ public class PrincipalFragment extends Fragment {
                 // Ampliar a localização dos marcadores - 2.0 até 21.0
                 googleMap.moveCamera(
                         CameraUpdateFactory.newLatLngZoom(bloco2n,17));
+                }
             }
         });
-        }
+
         return v;
     }
         // Inflate the layout for this fragment
